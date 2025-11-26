@@ -9,6 +9,8 @@ def divide(a, b):
 		return a / b
 	else:
 		return "Помилка: ділення на нуль!"
+def power(a, b):
+	return a ** b
 print("=== Простий калькулятор ===")
 print("Операції: +, -, *, /, **")
 print("Для виходу введіть 'exit'")
@@ -31,6 +33,8 @@ while True:
 			result = multiply(num1, num2)
 		elif operation == '/':
 			result = divide(num1, num2)
+		elif operation == "**":
+			result = power(num1, num2)
 		print(f"Результат: {result}")
 	except ValueError:
 		print("Помилка: введіть коректні числа!")
